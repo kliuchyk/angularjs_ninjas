@@ -118,3 +118,9 @@ main{
   cursor: pointer;
   margin-left: 10px;
 }
+
+.thumb {
+  width: 30px;
+  float: left;
+  margin: 0 10px 0;
+}
