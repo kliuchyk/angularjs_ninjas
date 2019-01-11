@@ -17,9 +17,7 @@ myNinjaApp.controller('NinjaController', ['$scope', function($scope) {
 
     $scope.removeNinja = function(ninja) {
         var removedNinja = $scope.ninjas.indexOf(ninja);
-        // console.log(removedNinja);
         $scope.ninjas.splice(removedNinja, 1);
-        return $scope.ninjas;
     }
 
     $scope.ninjas = [
