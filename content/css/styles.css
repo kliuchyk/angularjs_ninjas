@@ -124,3 +124,11 @@ main{
   float: left;
   margin: 0 10px 0;
 }
+
+.random-ninja, .content.home {
+  text-align: center;
+}
+
+.random-ninja img {
+  width: 60px;
+}
