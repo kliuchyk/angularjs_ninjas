@@ -179,4 +179,14 @@ main.ng-enter.ng-enter-active {
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
   border: 2px solid red;
-} 
+}
+
+.form-hints {
+  text-align: center;
+  color: red;
+}
+
+input[disabled="disabled"] {
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}

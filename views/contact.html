@@ -3,9 +3,17 @@
     <form name="contactForm" novalidate>
 
         <input type="text" placeholder="name" ng-model="contact.name" name="name" ng-required="true">
+        <div ng-show="contactForm.name.$touched && contactForm.name.$invalid" class="form-hints">
+            Enter a valid name
+        </div>
+
         <input type="email" placeholder="Email" ng-model="contact.email" name="email" ng-required="true">
+        <div ng-show="contactForm.email.$touched && contactForm.email.$invalid" class="form-hints">
+            Enter a valid email
+        </div>
+        
         <textarea placeholder="Your message" ng-model="contact.message" name="message" ng-required="true"></textarea>
-        <input type="submit" value="Send" >
+        <input type="submit" value="Send" ng-disabled="contactForm.$invalid" />
 
     </form>
 </div>
